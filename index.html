@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Application </title>
+    <style>
+        #container{
+            margin: auto;
+            max-width: 1200px;
+            background-color: aquamarine;
+            display: flex;
+        }
+        .task{
+            margin-top: 20px;
+            margin-left: 40px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+
+        }
+        #inp{
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #sel{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #btn1{
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .second_div{
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+        }
+        .head{
+            display: flex;
+            background-color: rgb(142, 192, 142);
+            border-radius: 2px;
+            margin-left: 10px;
+            margin-top: 10px;margin-right: 10px;
+        }
+        .head>p:nth-child(1){
+            margin-left: 10px;
+        }
+        .head>p:nth-child(2){
+            margin-left: 20px;
+        }
+        .head>p:nth-child(3){
+            margin-left: 20px;
+        }
+        .head>p:nth-child(4){
+            margin-left: 70px;
+            margin-right: 10px;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <div id="container">
+         <div class="task">
+            <input id="inp" placeholder="Task Title">
+            <br>
+            <select id="sel">
+                <option >Low</option>
+                <option >Medium</option>
+                <option >High</option>
+            </select>
+            <br>
+            <button id="btn1">Create Task</button>
+         </div>   
+         <div class="second_div">
+             <div class="head">
+                <p>Name</p>
+                <p>Priority</p>
+                <p>Status</p>
+                <p>Remove</p>
+             </div>
+        </div>
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
